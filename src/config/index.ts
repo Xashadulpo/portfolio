@@ -24,7 +24,7 @@ export const gridItems = [
     description: "",
 
     imgClassName: "",
-    titleClassName: "justify-start",
+    titleClassName: "justify-start text-center",
     img: "",
     spareImg: "",
     class: "col-span-4 md:col-span-3  lg:col-span-2 lg:row-span-2 ",
@@ -34,7 +34,7 @@ export const gridItems = [
     title: "My tech stack",
     description: "I constantly try to improve",
 
-    imgClassName: "relative top-0 right-0",
+    imgClassName: "",
     titleClassName: "justify-center",
     img: "",
     spareImg: "",
@@ -45,8 +45,9 @@ export const gridItems = [
     title: "Tech enthusiast with a passion for development.",
     description: "",
     imgClassName: "",
+
     titleClassName: "justify-start",
-    img: "/b4.svg",
+    img: "/grid.svg",
     spareImg: "/b4.svg",
     class: "col-span-4  md:col-span-3 lg:col-span-2  ",
   },
@@ -73,8 +74,6 @@ export const gridItems = [
     class: "col-span-4  md:col-span-3 lg:col-span-2 lg:row-span-2",
   },
 ];
-
-
 
 
 
