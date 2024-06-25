@@ -1,6 +1,14 @@
+"use client";
+import { leftLists, rightLists } from "@/config";
 import { cn } from "@/utils/cn";
+import { useState } from "react";
+import SkillList from "../skillLIst";
 import BackgroundGradientAnimation from "./bgGradientAnimation";
 import GridGlobe from "./GridGlobe";
+import animationData from "@/config/confetti.json";
+import { IoCopyOutline } from "react-icons/io5";
+import Lottie from "react-lottie";
+import MagicButton from "./MagicButton";
 
 export const BentoGrid = ({
   className,
@@ -31,6 +39,21 @@ export const BentoGridItem = ({
   titleClassName,
   spareImg,
 }: BentoGridItemProps) => {
+  const [copied, setCopied] = useState(false);
+  const defaultOptions = {
+    loop: copied,
+    autoplay: copied,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  const handleCopy = () => {
+    const text = "xashadulbusiness@gmail.com";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+  };
+
   return (
     <div
       className={cn(
@@ -75,7 +98,9 @@ export const BentoGridItem = ({
       <div
         className={cn(
           titleClassName,
-          "group-hover/bento:translate-x-2 transition duration-200 absolute md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+          `group-hover/bento:translate-x-2 transition duration-200  absolute md:h-full min-h-40 flex flex-col ${
+            id === 3 ? "p-2" : "p-5"
+          }   lg:p-10`
         )}
       >
         <div className="font-sans font-extralight  md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
@@ -86,8 +111,31 @@ export const BentoGridItem = ({
         >
           {title}
         </div>
+        {id === 6 && (
+          <div className=" w-full relative">
+            <div
+              className={`absolute -bottom-14 right-0 ${copied ? "block" : ""}`}
+            >
+              <Lottie options={defaultOptions} height={200} width={400} />
+            </div>
+
+            <MagicButton
+              title={copied ? "Email is Copied!" : "Copy my email address"}
+              icon={<IoCopyOutline />}
+              position="left"
+              handleBtn={handleCopy}
+              otherClasses="!bg-[#161A31]"
+            />
+          </div>
+        )}
       </div>
-      {id === 2 && <GridGlobe />}
+      {id === 2 && <GridGlobe />} 
+      {id === 3 && (
+        <div className="flex gap-1 lg:gap-4 w-fit absolute -right-3 lg:-right-2">
+          <SkillList listes={leftLists} position="left" otherclasses="" />
+          <SkillList listes={rightLists} position="right" otherclasses="" />
+        </div>
+      )}
     </div>
   );
 };

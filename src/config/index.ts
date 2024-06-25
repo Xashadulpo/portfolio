@@ -24,7 +24,7 @@ export const gridItems = [
     description: "",
 
     imgClassName: "",
-    titleClassName: "justify-start text-center",
+    titleClassName: "justify-start",
     img: "",
     spareImg: "",
     class: "col-span-4 md:col-span-3  lg:col-span-2 lg:row-span-2 ",
@@ -33,9 +33,8 @@ export const gridItems = [
     id: 3,
     title: "My tech stack",
     description: "I constantly try to improve",
-
     imgClassName: "",
-    titleClassName: "justify-center",
+    titleClassName: "justify-center !p-2",
     img: "",
     spareImg: "",
     class: "col-span-4  md:col-span-3 lg:col-span-2 lg:row-span-2 ",
@@ -45,7 +44,6 @@ export const gridItems = [
     title: "Tech enthusiast with a passion for development.",
     description: "",
     imgClassName: "",
-
     titleClassName: "justify-start",
     img: "/grid.svg",
     spareImg: "/b4.svg",
@@ -68,15 +66,19 @@ export const gridItems = [
     description: "",
     imgClassName: "",
 
-    titleClassName: "justify-center md:max-w-full max-w-60 text-center",
+    titleClassName: "justify-center max-w-full text-center ",
     img: "",
     spareImg: "",
     class: "col-span-4  md:col-span-3 lg:col-span-2 lg:row-span-2",
   },
 ];
 
-
-
+export const leftLists=[
+  "ReactJS","Express","Typescript"
+]
+export const rightLists=[
+  "ReactJS","Express","Typescript"
+]
   
 
   
