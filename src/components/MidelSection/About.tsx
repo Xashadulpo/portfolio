@@ -6,7 +6,7 @@ import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 const About = () => {
   return (
     <section id="about" className="relative">
-      <BentoGrid className="w-full mx-auto">
+      <BentoGrid className="w-full my-20">
         {gridItems.map((item, i) => (
           <BentoGridItem
             key={i}

@@ -75,11 +75,7 @@ export const BentoGridItem = ({
               className={`${imgClassName} "object-center object-cover"`}
             />
           )}
-          {id === 6 && (
-            <BackgroundGradientAnimation>
-              <div className="absolute  z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl" />
-            </BackgroundGradientAnimation>
-          )}
+          {id === 6 && <BackgroundGradientAnimation />}
         </div>
         <div
           className={`absolute right-0 -bottom-5 ${
@@ -101,8 +97,8 @@ export const BentoGridItem = ({
           `group-hover/bento:translate-x-2 transition duration-200  absolute md:h-full min-h-40 flex flex-col ${
             id === 3 ? "p-2" : "p-5"
           }   lg:p-10`
-        )}
-      >
+         )}
+       >
         <div className="font-sans font-extralight  md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
           {description}
         </div>
@@ -112,9 +108,9 @@ export const BentoGridItem = ({
           {title}
         </div>
         {id === 6 && (
-          <div className=" w-full relative">
+          <div className=" w-full relative ">
             <div
-              className={`absolute -bottom-14 right-0 ${copied ? "block" : ""}`}
+              className={`absolute -bottom-0 right-0 ${copied ? "block" : ""}`}
             >
               <Lottie options={defaultOptions} height={200} width={400} />
             </div>
@@ -129,7 +125,7 @@ export const BentoGridItem = ({
           </div>
         )}
       </div>
-      {id === 2 && <GridGlobe />} 
+      {id === 2 && <GridGlobe />}
       {id === 3 && (
         <div className="flex gap-1 lg:gap-4 w-fit absolute -right-3 lg:-right-2">
           <SkillList listes={leftLists} position="left" otherclasses="" />

@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="shortcut icon" href="/exp1.svg" />
+        <link rel="shortcut icon" href="https://cdn.dribbble.com/users/3912043/screenshots/17431176/media/b92bec4f9982bb9843fcad1717938b98.jpg?resize=400x300&vertical=center" />
        
       </Head>
       <body>
