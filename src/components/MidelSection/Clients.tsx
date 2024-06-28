@@ -1,11 +1,11 @@
-import { companies, testimonials } from "@/config";
 import Image from "next/image";
+import { companies, testimonials } from "@/config";
 import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
 
 const Clients = () => {
   return (
-    <div className="py-20">
-      <h1 className="text-white text-[48px] font-extrabold text-center">
+    <section className="py-20 max-sm:px-5" id="testimonials">
+      <h1 className="header">
         Kind words from <span className="text-purple">satisfied clients</span>
       </h1>
       <div className="h-[50vh] rounded-md flex flex-col w-full  antialiased  items-center justify-center relative overflow-hidden">
@@ -31,7 +31,7 @@ const Clients = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

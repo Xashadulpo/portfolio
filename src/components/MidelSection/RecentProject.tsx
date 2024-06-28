@@ -5,8 +5,8 @@ import { PinContainer } from "../ui/3d-pin";
 
 const RecentProject = () => {
   return (
-    <div className="py-20 max-sm:px-10">
-      <h1 className="text-white text-[48px] font-extrabold text-center">
+    <section className="py-20 max-sm:px-5" id="projects">
+      <h1 className="header">
        
         A small Selection of <span className="text-purple">recent project</span>
       </h1>
@@ -70,7 +70,7 @@ const RecentProject = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

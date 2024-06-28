@@ -7,3 +7,12 @@
 .itemsCenter{
     align-items: center;
 }
+/* Example CSS */
+
+  
+  
+@layer utilities{
+    .header{
+        @apply text-white text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-extrabold text-center;
+    }
+}

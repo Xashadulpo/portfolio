@@ -5,8 +5,8 @@ import { Button } from "../ui/moving-border";
 
 const Experience = () => {
   return (
-    <div className="py-20 w-full max-w-7xl">
-      <h1 className="text-white text-[48px] font-extrabold text-center">
+    <div className="py-20 w-full max-sm:px-5 max-w-7xl">
+      <h1 className="header">
         My <span className="text-purple">work experience</span>
       </h1>
 

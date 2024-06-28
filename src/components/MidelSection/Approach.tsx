@@ -1,11 +1,11 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 import { CanvasRevealEffect } from "../ui/canvas-reveal-effect";
-import MagicButton from "../ui/MagicButton";
+
 
 const Approach = () => {
   return (
-    <section className="w-full max-w-7xl py-20 ">
+    <section className="w-full max-w-7xl py-20 " >
       <h1 className="text-white text-[48px] font-extrabold text-center">
         My <span className="text-purple">Approach</span>
       </h1>
