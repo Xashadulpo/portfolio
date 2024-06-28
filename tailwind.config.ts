@@ -31,6 +31,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Kanit: ["Kanit", "sans-serif"]
+      },
+      fontWeight: {
+        'kanitweight': "600",
+      },
       colors: {
         black: {
           DEFAULT: "#000",

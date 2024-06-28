@@ -5,9 +5,9 @@ import { PinContainer } from "../ui/3d-pin";
 
 const RecentProject = () => {
   return (
-    <div className="py-20">
+    <div className="py-20 max-sm:px-10">
       <h1 className="text-white text-[48px] font-extrabold text-center">
-        {" "}
+       
         A small Selection of <span className="text-purple">recent project</span>
       </h1>
       <div className="grid grid-cols-1 xl:grid-cols-2  justify-center mt-10 p-4 items-center xl:gap-x-[11rem] justify-items-center"

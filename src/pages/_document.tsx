@@ -4,17 +4,26 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link rel="shortcut icon" href="https://cdn.dribbble.com/users/3912043/screenshots/17431176/media/b92bec4f9982bb9843fcad1717938b98.jpg?resize=400x300&vertical=center" />
-       
+        <link
+          rel="shortcut icon"
+          href="https://cdn.dribbble.com/users/3912043/screenshots/17431176/media/b92bec4f9982bb9843fcad1717938b98.jpg?resize=400x300&vertical=center"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <body>
         <Main />
         <NextScript />
         <title>portfolio</title>
-        <meta
-          name="description"
-          content=""
-        />
+        <meta name="description" content="" />
       </body>
     </Html>
   );
